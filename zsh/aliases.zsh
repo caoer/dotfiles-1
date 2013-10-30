@@ -149,3 +149,36 @@ alias rs='rspec spec'
 alias sp='sprintly'
 # spb = sprintly branch - create a branch automatically based on the bug you're working on
 alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A-Za-z0-9 ]//g' | sed 's/ /-/g' | cut -d"-" -f1,2,3,4,5\`"
+
+# Customize
+
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/Library/Haskell/bin:/usr/local/share/npm/bin:$PATH"
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+
+ZSH_THEME="zitao-simple"
+
+alias sb3="subl" #Sublime Text 3
+alias sb="subl2" #Sublime Text 2
+alias mate="/usr/local/bin/mate"
+alias zshrc="sb ~/.zshrc" # quick edit .zshrc
+alias reload="source ~/.zshrc" #reload environment, so I don't have to open another window
+alias t="/usr/local/bin/mate"
+
+# lolcommits
+export LOLCOMMITS_FORK=true
+# # export LOLCOMMITS_ANIMATE=3
+#
+
+
+if [[ -f "$HOME/.amazon_keys" ]]; then
+      source "$HOME/.amazon_keys";
+fi
+
+eval "$(hub alias -s)"
