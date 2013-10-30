@@ -127,3 +127,6 @@
   path = .gitconfig.user
 [github]
 	user = caoer
+[user]
+	name = Zitao Xiong
+	email = caoer115@gmail.com
